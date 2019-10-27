@@ -19,6 +19,12 @@
       "homepage": "https://github.com/pfrenssen"
     }
   ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/ebeyrent/DrupalDriver"
+    }
+  ],
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
@@ -27,7 +33,7 @@
     "behat/mink-extension": "~2.0",
     "behat/mink-goutte-driver": "~1.0",
     "behat/mink-selenium2-driver": "~1.1",
-    "drupal/drupal-driver": "^2.0.0",
+    "drupal/drupal-driver": "dev-support-drupal5",
     "symfony/browser-kit": "^3.4",
     "symfony/dependency-injection": "~3.0",
     "symfony/translation": "^3.4"

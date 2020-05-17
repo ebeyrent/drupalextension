@@ -21,14 +21,14 @@ services:
       - "@drupal.driver.random"
     tags:
       - { name: drupal.driver, alias: drupal }
-    drupal.driver.cores.5:
-        class: "%drupal.driver.cores.5.class%"
-        tags:
-          - { name: drupal.core, alias: 5 }
-        arguments:
-          - "%drupal.driver.drupal.drupal_root%"
-          - "%mink.base_url%"
-          - "@drupal.driver.random"
+  drupal.driver.cores.5:
+    class: "%drupal.driver.cores.5.class%"
+    tags:
+      - { name: drupal.core, alias: 5 }
+    arguments:
+      - "%drupal.driver.drupal.drupal_root%"
+      - "%mink.base_url%"
+      - "@drupal.driver.random"
   drupal.driver.cores.6:
     class: "%drupal.driver.cores.6.class%"
     tags:
